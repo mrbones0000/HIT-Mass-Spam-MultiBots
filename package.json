@@ -1,0 +1,22 @@
+{
+  "name": "discord-multibot-spammer",
+  "version": "1.0.0",
+  "description": "Bot de Discord con múltiples tokens para enviar DMs masivos.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "massdm",
+    "railway",
+    "spam"
+  ],
+  "author": "HIT",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "axios": "^1.6.8"
+  }
+}
