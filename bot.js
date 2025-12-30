@@ -6,8 +6,8 @@ const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 const { tokens, spam } = config;
 const clients = [];
 
-const BATCH_SIZE = 5;        // Bots por tanda (Railway Free)
-const BATCH_DELAY = 1000;    // Espera entre tandas (ms)
+const BATCH_SIZE = 5;        
+const BATCH_DELAY = 1000;    
 
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -118,7 +118,7 @@ async function sendDM(token, userId, botIndex) {
     }
 }
 
-// Iniciar todos los bots
+
 tokens.forEach((token, i) => {
     const client = createClient(token, i);
     clients.push(client);
